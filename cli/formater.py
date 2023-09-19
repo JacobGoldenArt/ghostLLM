@@ -1,13 +1,15 @@
+from rich.table import Table
+from rich import print
+
+
 class CLI:
     @staticmethod
     def handle_verbose_output(
         verbose, full_history=None, api_response=None, user_input=None
     ):
-        if verbose == "resp":
-            print("Full API Response:", api_response)
-        elif verbose == "user_msg":
-            print("User Message:", user_input)
-        elif verbose == "all":
+        if verbose == "obj":
+            print("API Response:", api_response)
+        elif verbose == "thread":
             CLI.print_verbose_output(full_history)
 
     @staticmethod
