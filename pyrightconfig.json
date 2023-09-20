@@ -1,0 +1,44 @@
+{
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "src/experimental",
+    "src/typestubs",
+    "utils"
+  ],
+  "ignore": [
+    "utils"
+  ],
+  "defineConstant": {
+    "DEBUG": true
+  },
+  "$schema": "https://raw.githubusercontent.com/microsoft/pyright/main/packages/vscode-pyright/schemas/pyrightconfig.schema.json",
+  "typeCheckingMode": "strict",
+  "reportIncompleteStub": "none",
+  "reportMissingParameterType": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownParameterType": "none",
+  "reportUnknownVariableType": "none",
+  "reportCallInDefaultInitializer": "error",
+  "reportImplicitStringConcatenation": "error",
+  "reportUnnecessaryTypeIgnoreComment": "error",
+  "enableTypeIgnoreComments": false,
+  "reportMissingSuperCall": "none",
+  "reportUninitializedInstanceVariable": "none",
+  "reportShadowedImports": "none",
+  "reportPrivateUsage": "none",
+  "reportMissingModuleSource": "none",
+  "reportIncompatibleMethodOverride": "none",
+  "reportIncompatibleVariableOverride": "none",
+  "reportPropertyTypeMismatch": "none",
+  "reportOverlappingOverload": "none",
+  "reportSelfClsParameterName": "none",
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+  "pythonVersion": "3.10",
+  "venvPath": ".",
+  "venv": ".venv"
+}
