@@ -40,7 +40,7 @@ def topological_sort(graph, node, visited, stack):
     stack.append(node)
 
 # Path to the root directory of the Python project
-project_root = "/Users/jacob.akerson/_Dev/jacobgoldenart/ghostLLM/"
+project_root = "/Users/jacob.akerson/_Dev/jacobgoldenart/ghostLLM/src/"
 
 
 # List of folders or files to ignore

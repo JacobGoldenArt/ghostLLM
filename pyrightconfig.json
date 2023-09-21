@@ -39,6 +39,6 @@
   "reportMissingImports": true,
   "reportMissingTypeStubs": false,
   "pythonVersion": "3.10",
-  "venvPath": ".",
+  "venvPath": "/Users/jacob.akerson/_Dev/jacobgoldenart/",
   "venv": ".venv"
 }

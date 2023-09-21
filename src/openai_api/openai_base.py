@@ -4,7 +4,7 @@ import openai
 from openai import ChatCompletion
 import dotenv
 from logs.handle_feedback import LLMfeedback
-from memory.history import History
+from memory.chat_history import History
 
 dotenv.load_dotenv()
 
@@ -18,7 +18,7 @@ class OpenaiAPIBase:
         self.max_tokens = max_tokens
         self.model = model
         self.verbose = verbose
-        self.history = History(sys)
+        self.history = History(sys, verbose)
 
     def make_api_call(self, last_turns: List[Dict[str, str]], additional_params: Optional[Dict[str, Union[str, int, float, List[Dict[str, str]]]]] = None) -> ChatCompletion:
         """Make an API call to OpenAI."""
